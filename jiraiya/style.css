@@ -1,0 +1,89 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #BCE0FF;
+}
+.gif> img{
+    animation: pulse 2s normal forwards ease-in-out;
+ 
+    
+}
+.gif{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #BCE0FF;
+    height: 99vh;
+    width: 45vw;
+}
+.text{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width:65vw;
+    padding-left: 2vw;
+    color: aliceblue;
+    background-color: rgb(127,40,47);
+    -webkit-clip-path: polygon(-12px 100vh,40vw 100vh,60vw -24vh,-3vh -13vw);
+    z-index: 10;
+    border: 5vh solid #8E9085; 
+}
+.text > h1{
+    animation: text 2s normal forwards ease-in-out;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10vh;
+    padding-top: 8vh;
+    font-weight: 900;
+}
+.text > h2{
+    animation: text 2s normal forwards ease-in-out;
+    padding-top: 5vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 6vh;
+    font-weight: 900;
+}
+.text > p{
+    animation: text 2s normal forwards ease-in-out;
+    padding-top: 5vh;
+    line-height: 6vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3vh;
+    font-weight: 500;
+}
+.menu{
+    padding: 2vw;
+    font-size: 1.6vw;
+    font-weight: 900;
+    display: flex;
+    justify-content: space-around;
+}
+@keyframes pulse {
+    0% {
+        opacity: 0;
+        width: 0vw;
+        height: 0vh;
+    }
+    100% {
+        height: 100%;
+        width: 100%;
+       
+    }
+  }
+  @keyframes text {
+    0% {
+        font-size: 0vh;
+    }
+    100% {
+    
+    }
+  }
+.container > img{
+    height: 100vh;
+    width: 100vw;
+}
